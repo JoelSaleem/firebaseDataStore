@@ -2,7 +2,7 @@ import React from 'react';
 import { Scene, Router } from 'react-native-router-flux';
 import AuthForm from './components/AuthForm';
 import CreateUserForm from './components/CreateUserForm';
-import Scene2 from './components/Scene2';
+import DataForm from './components/DataForm';
 
 const RouterComponent = () => {
   return(
@@ -20,9 +20,9 @@ const RouterComponent = () => {
           title="Please Log In"
           />
         <Scene
-          key="scene"
-          component={Scene2}
-          title="Scene 2"
+          key="dataForm"
+          component={DataForm}
+          title="Data Form"
         />
       </Scene>
     </Router>
